@@ -13,7 +13,7 @@ namespace SDA
 	{
 	}
 
-	AttackState* AttackState::Instance()
+	AttackState* AttackState::GetInstance()
 	{
 		// Lazy loading.
 		if (!_instance)
@@ -23,15 +23,15 @@ namespace SDA
 		return _instance;
 	}
 
-	void AttackState::Enter(GameCharacter& t)
+	void AttackState::Enter(GameCharacter* t)
 	{
 	}
 
-	void AttackState::Execute(GameCharacter& t)
+	void AttackState::Execute(GameCharacter* t)
 	{
 	}
 
-	void AttackState::Exit(GameCharacter& t)
+	void AttackState::Exit(GameCharacter* t)
 	{
 	}
 }

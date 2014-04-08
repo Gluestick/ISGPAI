@@ -13,7 +13,7 @@ namespace SDA
 	{
 	}
 
-	PatrolState* PatrolState::Instance()
+	PatrolState* PatrolState::GetInstance()
 	{
 		// Lazy loading.
 		if (!_instance)
@@ -23,15 +23,15 @@ namespace SDA
 		return _instance;
 	}
 
-	void PatrolState::Enter(GameCharacter& t)
+	void PatrolState::Enter(GameCharacter* t)
 	{
 	}
 
-	void PatrolState::Execute(GameCharacter& t)
+	void PatrolState::Execute(GameCharacter* t)
 	{
 	}
 
-	void PatrolState::Exit(GameCharacter& t)
+	void PatrolState::Exit(GameCharacter* t)
 	{
 	}
 }

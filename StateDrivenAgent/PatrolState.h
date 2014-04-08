@@ -10,10 +10,12 @@ namespace SDA
 	class PatrolState : public State<GameCharacter>
 	{
 	public:
-		void Enter(GameCharacter& t) override;
-		void Execute(GameCharacter& t) override;
-		void Exit(GameCharacter& t) override;
-		static PatrolState* Instance();
+		void Enter(GameCharacter* t) override;
+		void Execute(GameCharacter* t) override;
+		void Exit(GameCharacter* t) override;
+
+		// Get the singleton instance of AttackState.
+		static PatrolState* GetInstance();
 	private:
 		PatrolState();
 		~PatrolState();
