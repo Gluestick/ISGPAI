@@ -68,10 +68,12 @@
     <ClCompile Include="AttackState.cpp" />
     <ClCompile Include="GameCharacter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PatrolState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AttackState.h" />
     <ClInclude Include="GameCharacter.h" />
+    <ClInclude Include="PatrolState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateMachine.h" />
   </ItemGroup>
