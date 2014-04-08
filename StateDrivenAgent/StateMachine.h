@@ -24,6 +24,10 @@ namespace SDA
 			_previousState = _currentState;
 			_currentState = newState;
 		}
+
+		void Update()
+		{
+		}
 	private:
 		T* _entity;
 		State<T>* _currentState;
