@@ -1,4 +1,5 @@
 #include "PatrolState.h"
+#include <iostream>
 
 namespace SDA
 {
@@ -25,10 +26,12 @@ namespace SDA
 
 	void PatrolState::Enter(GameCharacter* t)
 	{
+		std::cout << "On patrol!" << std::endl;
 	}
 
 	void PatrolState::Execute(GameCharacter* t)
 	{
+		std::cout << "Patroling..." << std::endl;
 	}
 
 	void PatrolState::Exit(GameCharacter* t)

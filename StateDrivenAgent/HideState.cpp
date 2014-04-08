@@ -1,4 +1,5 @@
 #include "HideState.h"
+#include <iostream>
 
 namespace SDA
 {
@@ -25,13 +26,16 @@ namespace SDA
 
 	void HideState::Enter(GameCharacter* t)
 	{
+		std::cout << "Enemy in sight!" << std::endl;
 	}
 
 	void HideState::Execute(GameCharacter* t)
 	{
+		std::cout << "Hiding..." << std::endl;
 	}
 
 	void HideState::Exit(GameCharacter* t)
 	{
+		std::cout << "It's safe again." << std::endl;
 	}
 }
