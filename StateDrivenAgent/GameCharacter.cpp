@@ -31,4 +31,9 @@ namespace SDA
 	{
 		_stateMachine->Update();
 	}
+
+	void GameCharacter::ChangeState(State<GameCharacter>* newState)
+	{
+		_stateMachine->ChangeState(newState);
+	}
 }

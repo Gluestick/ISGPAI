@@ -27,6 +27,9 @@
     <ClCompile Include="PatrolState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HideState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCharacter.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PatrolState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HideState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
