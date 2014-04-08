@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCharacter.h" />
+    <ClInclude Include="State.h" />
     <ClInclude Include="StateMachine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
