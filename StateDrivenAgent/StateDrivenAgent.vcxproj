@@ -70,6 +70,7 @@
     <ClCompile Include="HideState.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PatrolState.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AttackState.h" />
