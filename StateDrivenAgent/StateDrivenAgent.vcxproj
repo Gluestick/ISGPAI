@@ -65,9 +65,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AttackState.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AttackState.h" />
     <ClInclude Include="GameCharacter.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateMachine.h" />
