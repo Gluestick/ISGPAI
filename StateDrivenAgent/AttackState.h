@@ -13,7 +13,7 @@ namespace SDA
 		void Enter(GameCharacter& t) override;
 		void Execute(GameCharacter& t) override;
 		void Exit(GameCharacter& t) override;
-		static AttackState* instance();
+		static AttackState* Instance();
 	private:
 		AttackState();
 		~AttackState();

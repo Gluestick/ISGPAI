@@ -6,10 +6,8 @@ namespace SDA
 	{
 		GameCharacter();
 		~GameCharacter();
-		int magic_power() const;
-		int magic_power(int val);
-		int strength() const;
-		int strength(int val);
+		int GetStrength() const;
+		int SetStrength(int val);
 		void Update();
 	};
 }

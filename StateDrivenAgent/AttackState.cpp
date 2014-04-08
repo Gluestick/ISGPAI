@@ -13,7 +13,7 @@ namespace SDA
 	{
 	}
 
-	AttackState* AttackState::instance()
+	AttackState* AttackState::Instance()
 	{
 		// Lazy loading.
 		if (!_instance)
