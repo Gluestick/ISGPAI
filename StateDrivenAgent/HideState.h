@@ -5,20 +5,20 @@
 
 namespace SDA
 {
-	class PatrolState;
+	class HideState;
 
-	class PatrolState : public State<GameCharacter>
+	class HideState : public State<GameCharacter>
 	{
 	public:
 		void Enter(GameCharacter* t) override;
 		void Execute(GameCharacter* t) override;
 		void Exit(GameCharacter* t) override;
 
-		// Get the singleton instance of PatrolState.
-		static PatrolState* GetInstance();
+		// Get the singleton instance of HideState.
+		static HideState* GetInstance();
 	private:
-		PatrolState();
-		~PatrolState();
-		static PatrolState* _instance;
+		HideState();
+		~HideState();
+		static HideState* _instance;
 	};
 }
