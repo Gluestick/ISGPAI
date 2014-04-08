@@ -9,6 +9,7 @@ namespace SDA
 	public:
 		GameCharacter();
 		~GameCharacter();
+		static const int DefaultStrength;
 		int GetStrength() const;
 		void SetStrength(int strength);
 		void Update();

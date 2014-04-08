@@ -4,8 +4,11 @@
 
 namespace SDA
 {
+	const int GameCharacter::DefaultStrength = 10;
+
 	GameCharacter::GameCharacter()
 	{
+		_strength = DefaultStrength;
 		_stateMachine = new StateMachine<GameCharacter>(this);
 	}
 
