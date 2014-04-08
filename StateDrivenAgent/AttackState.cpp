@@ -2,6 +2,27 @@
 
 namespace SDA
 {
+	// Lazy loading creates object when it is requested.
+	AttackState* AttackState::_instance = nullptr;
+
+	AttackState::AttackState()
+	{
+	}
+
+	AttackState::~AttackState()
+	{
+	}
+
+	AttackState* AttackState::instance()
+	{
+		// Lazy loading.
+		if (!_instance)
+		{
+			_instance = new AttackState();
+		}
+		return _instance;
+	}
+
 	void AttackState::Enter(GameCharacter& t)
 	{
 	}

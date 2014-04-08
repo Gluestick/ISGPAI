@@ -4,6 +4,6 @@ using namespace SDA;
 
 int main(int argc, char **argv)
 {
-	AttackState state;
+	AttackState* state = AttackState::instance();
 	return 0;
 }

@@ -19,8 +19,14 @@ namespace SDA
 			// We do not own _entity. It must be deleted outside of this class.
 		}
 
-		void ChangeState(State<T>* newState);
+		void ChangeState(State<T>* newState)
+		{
+			_previousState = _currentState;
+			_currentState = newState;
+		}
 	private:
 		T* _entity;
+		State<T>* _currentState;
+		State<T>* _previousState;
 	};
 }
