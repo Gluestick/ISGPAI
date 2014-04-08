@@ -7,7 +7,7 @@ namespace SDA
 		GameCharacter();
 		~GameCharacter();
 		int GetStrength() const;
-		int SetStrength(int val);
+		int SetStrength(int strength);
 		void Update();
 	};
 }
