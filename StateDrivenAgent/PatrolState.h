@@ -17,8 +17,8 @@ namespace SDA
 		// Get the singleton instance of PatrolState.
 		static PatrolState* GetInstance();
 	private:
-		// 1 = 100%, 2 = 50%, 3 = 33%, etc...
-		static const int PatrolRarity;
+		// Chance in percentage.
+		static const int PatrolFoundChance;
 		PatrolState();
 		~PatrolState();
 		static PatrolState* _instance;

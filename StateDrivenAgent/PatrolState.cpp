@@ -7,7 +7,7 @@ namespace SDA
 {
 	// Lazy loading creates object when it is requested.
 	PatrolState* PatrolState::_instance = nullptr;
-	const int PatrolState::PatrolRarity = 4;
+	const int PatrolState::PatrolFoundChance = 25;
 
 	PatrolState::PatrolState()
 	{
@@ -40,7 +40,7 @@ namespace SDA
 		t->SetStrength(t->GetStrength() + 1);
 
 		// If a patrol is nearby...
-		if (rand() % PatrolRarity == 0)
+		if (rand() % 99 + 1 < PatrolFoundChance)
 		{
 			// Change to fighting if strong enough.
 			if (t->GetStrength() > 10)

@@ -17,6 +17,8 @@ namespace SDA
 		// Get the singleton instance of HideState.
 		static HideState* GetInstance();
 	private:
+		// Chance in percentage.
+		static const int PatrolGoneChance;
 		HideState();
 		~HideState();
 		static HideState* _instance;

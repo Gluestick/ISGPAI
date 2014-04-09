@@ -2,7 +2,7 @@
 #include <thread>
 
 // Time between updates in ms.
-const int IntervalTime = 1000;
+const int IntervalTime = 500;
 
 int main(int argc, char **argv)
 {

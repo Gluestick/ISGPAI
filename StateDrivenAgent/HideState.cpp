@@ -1,10 +1,12 @@
 #include "HideState.h"
+#include "PatrolState.h"
 #include <iostream>
 
 namespace SDA
 {
 	// Lazy loading creates object when it is requested.
 	HideState* HideState::_instance = nullptr;
+	const int HideState::PatrolGoneChance = 25;
 
 	HideState::HideState()
 	{
@@ -32,6 +34,14 @@ namespace SDA
 	void HideState::Execute(GameCharacter* t)
 	{
 		std::cout << "Hiding..." << std::endl;
+
+		// Healing...
+		t->SetStrength(t->GetStrength() + 1);
+		
+		if (rand() % 99 + 1 < PatrolGoneChance)
+		{
+			t->ChangeState(PatrolState::GetInstance());
+		}
 	}
 
 	void HideState::Exit(GameCharacter* t)
