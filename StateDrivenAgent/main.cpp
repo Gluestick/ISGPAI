@@ -7,7 +7,7 @@ const int IntervalTime = 500;
 int main(int argc, char **argv)
 {
 	// Set random seed.
-	srand(time(NULL));
+	srand(time(nullptr));
 
 	SDA::World world;
 	while (true)
