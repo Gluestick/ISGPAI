@@ -1,4 +1,5 @@
 #include "AttackState.h"
+#include "HideState.h"
 #include <iostream>
 
 namespace SDA
@@ -31,7 +32,16 @@ namespace SDA
 
 	void AttackState::Execute(GameCharacter* t)
 	{
-		std::cout << "Fighting" << std::endl;
+		std::cout << "Fighting..." << std::endl;
+
+		// Make the gamecharacter weaker.
+		t->SetStrength(t->GetStrength() - 1);
+
+		// We're wounded, go hide!
+		if (t->GetStrength() < 5)
+		{
+			t->ChangeState(HideState::GetInstance());
+		}
 	}
 
 	void AttackState::Exit(GameCharacter* t)
