@@ -23,6 +23,12 @@ namespace SDA
 		{
 			_previousState = _currentState;
 			_currentState = newState;
+
+			if (_previousState)
+			{
+				_previousState->Exit(_entity);
+				_currentState->Enter(_entity);
+			}
 		}
 
 		void Update()
