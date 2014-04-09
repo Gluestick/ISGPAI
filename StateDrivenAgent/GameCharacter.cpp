@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GameCharacter.h"
+#include "PatrolState.h"
 
 namespace SDA
 {
@@ -10,6 +11,7 @@ namespace SDA
 	{
 		_strength = DefaultStrength;
 		_stateMachine = new StateMachine<GameCharacter>(this);
+		_stateMachine->ChangeState(PatrolState::GetInstance());
 	}
 
 	GameCharacter::~GameCharacter()
