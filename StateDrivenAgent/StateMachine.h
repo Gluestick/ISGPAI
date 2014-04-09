@@ -27,6 +27,10 @@ namespace SDA
 
 		void Update()
 		{
+			if (_currentState)
+			{
+				_currentState->Execute(_entity);
+			}
 		}
 	private:
 		T* _entity;
