@@ -12,6 +12,8 @@ namespace SDA
 		StateMachine(T* entity)
 		{
 			this->_entity = entity;
+			_currentState = nullptr;
+			_previousState = nullptr;
 		}
 
 		~StateMachine()
